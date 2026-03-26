@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lập trình web - Lab 03</title>
+    <style>
+        :root {
+            --primary-color: #007bff;
+            --border-color: #333;
+            --bg-light: #f9f9f9;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            border: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        header, footer {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            margin: 10px;
+        }
+
+        nav {
+            margin-bottom: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            margin: 0 10px;
+        }
+
+        nav a.active {
+            font-weight: bold;
+        }
+
+        main {
+            padding: 40px 20px;
+            min-height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 30px;
+            width: 100%;
+            max-width: 450px;
+            background: white;
+            box-sizing: border-box;
+        }
+
+        .card h2 {
+            text-align: center;
+            margin-top: 0;
+            font-weight: normal;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            display: flex;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+
+        .form-group label {
+            width: 120px;
+            font-size: 14px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="password"],
+        .form-group input[type="email"] {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #333;
+        }
+
+        .form-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            padding-left: 120px;
+        }
+
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .link-alt {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        /* Table styles for list.html */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #333;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 5px;
+        }
+
+        .pagination button {
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            background: white;
+            cursor: pointer;
+        }
+
+        .pagination button.active {
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .info-row {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .info-label {
+            width: 120px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <nav id="main-nav">
+                <a href="index.html">Home</a> | 
+                <a href="login.html">Đăng nhập</a> | 
+                <a href="register.html">Đăng ký</a>
+            </nav>
+        </header>
+
+        <!-- Main Content Section -->
+        <main id="content">
+            <div style="text-align: center;">
+                <h1>Chào mừng đến với Lab 03</h1>
+                <p>Hệ thống quản lý người dùng cơ bản sử dụng HTML/CSS/JS</p>
+                <p>Vui lòng chọn chức năng từ menu phía trên.</p>
+            </div>
+        </main>
+
+        <!-- Footer Section -->
+        <footer>
+            Lập trình web @01/2024
+        </footer>
+    </div>
+
+    <script>
+        // Logic điều hướng giả lập cho demo (trong thực tế sẽ là các file riêng biệt)
+        // Tuy nhiên theo yêu cầu Lab, ta tạo cấu trúc cho từng file.
+        // Dưới đây là nội dung cho các file khác.
+    </script>
+</body>
+</html>
