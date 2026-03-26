@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký - Lập trình web</title>
+    <style>
+        :root {
+            --primary-color: #007bff;
+            --border-color: #333;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            border: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        header, footer {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            margin: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            margin: 0 10px;
+        }
+
+        main {
+            padding: 40px 20px;
+            min-height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 30px;
+            width: 100%;
+            max-width: 450px;
+            background: white;
+            box-sizing: border-box;
+        }
+
+        .card h2 {
+            text-align: center;
+            margin-top: 0;
+            font-weight: normal;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            display: flex;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+
+        .form-group label {
+            width: 130px;
+            font-size: 14px;
+        }
+
+        .form-group input {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .form-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            padding-left: 130px;
+        }
+
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .link-alt {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <nav>
+                <a href="index.html">Home</a> | 
+                <a href="login.html">Đăng nhập</a> | 
+                <a href="register.html"><b>Đăng ký</b></a>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <div class="card">
+                <h2>Màn hình đăng ký</h2>
+                <!-- Thuộc tính action="list.html" sẽ điều hướng sau khi submit -->
+                <form action="list.html" method="GET">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Mật khẩu</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="re-password">Nhập lại mật khẩu</label>
+                        <input type="password" id="re-password" name="re-password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-footer">
+                        <a href="login.html" class="link-alt">Đã có tài khoản</a>
+                        <button type="submit" class="btn">Đăng ký</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            Lập trình web @01/2024
+        </footer>
+    </div>
+
+</body>
+</html>
