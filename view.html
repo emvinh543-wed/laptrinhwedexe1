@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chi tiết user - Lập trình web</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 800px;
+            border: 1px solid #333;
+        }
+
+        header,
+        footer {
+            border: 1px solid #333;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            min-height: 400px;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 40px;
+            width: 450px;
+        }
+
+        .card h2 {
+            text-align: center;
+            font-weight: normal;
+            margin-bottom: 40px;
+        }
+
+        .info-group {
+            display: flex;
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+
+        .label {
+            width: 120px;
+            font-weight: bold;
+        }
+
+        .btn-container {
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        .btn {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 25px;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html">Home</a> | <a href="login.html">Đăng xuất</a>
+        </header>
+        <main>
+            <div class="card">
+                <h2>Màn hình chi tiết</h2>
+                <div class="info-group">
+                    <div class="label">Username</div>
+                    <div>test1</div>
+                </div>
+                <div class="info-group">
+                    <div class="label">Email</div>
+                    <div>test1@gmail.com</div>
+                </div>
+                <div class="btn-container">
+                    <a href="update.html" class="btn">Chỉnh sửa</a>
+                </div>
+            </div>
+        </main>
+        <footer>Lập trình web @01/2024</footer>
+    </div>
+</body>
+
+</html>
